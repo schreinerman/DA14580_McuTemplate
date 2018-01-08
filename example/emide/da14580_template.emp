@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<emIDE_project_file>
+	<FileVersion major="1" minor="7" />
+	<Project>
+		<Option title="da14580_template" />
+		<Option pch_mode="2" />
+		<Option compiler="armelfgcc" />
+		<Build>
+			<Target title="DA14580_Debug">
+				<Option output="debug/exec/da14580_template" prefix_auto="1" extension_auto="1" />
+				<Option object_output="debug/obj" />
+				<Option type="1" />
+				<Option compiler="armelfgcc" />
+				<Compiler>
+					<Add option="-mthumb" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-mcpu=cortex-m0plus" />
+					<Add option="-ggdb" />
+					<Add option="-fno-strict-aliasing" />
+					<Add option="-ffunction-sections" />
+					<Add option="-fdata-sections" />
+					<Add option="-fno-exceptions" />
+					<Add option="-fno-delete-null-pointer-checks" />
+					<Add option="-fno-hosted" />
+					<Add option="-fmessage-length=0" />
+					<Add option="-fno-builtin" />
+					<Add option="-DDEBUG=1" />
+				</Compiler>
+				<Linker>
+					<Add option="-mthumb" />
+					<Add option="-nostartfiles" />
+					<Add option="-nostdlib" />
+					<Add option="-fno-exceptions" />
+					<Add option="--specs=nano.specs" />
+					<Add option="-lnosys" />
+					<Add option="-Xlinker -n" />
+					<Add option="-Wl,--start-group" />
+					<Add option="-lc -lg -lstdc++ -lsupc++" />
+					<Add option="-lgcc -lm" />
+					<Add option="-Wl,--end-group" />
+					<Add option="-Wl,-Map" />
+					<Add option="-Wl,${TARGET_OUTPUT_FILE}.map" />
+					<Add option="-Wl,--gc-sections" />
+					<Add option="-n" />
+					<Add option="-Wl,-cref" />
+					<Add option="-Wl,--no-warn-mismatch" />
+					<Add option="-L armv6-m" />
+					<Add option="-TDA14580_ram.ld" />
+				</Linker>
+				<PostOutput>
+					<ConvertedOutput PostOutputCreate="0" />
+					<ConvertedOutput PostOutputType="HEX" />
+					<ConvertedOutput PostOutputFile="${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}" />
+				</PostOutput>
+			</Target>
+			<Target title="DA14580_Release">
+				<Option output="release/exec/da14580_template" prefix_auto="1" extension_auto="1" />
+				<Option object_output="release/obj" />
+				<Option type="1" />
+				<Option compiler="armelfgcc" />
+				<Compiler>
+					<Add option="-mthumb" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-mcpu=cortex-m0plus" />
+					<Add option="-ggdb" />
+					<Add option="-fno-strict-aliasing" />
+					<Add option="-ffunction-sections" />
+					<Add option="-fdata-sections" />
+					<Add option="-fno-exceptions" />
+					<Add option="-fno-delete-null-pointer-checks" />
+					<Add option="-fno-hosted" />
+					<Add option="-fmessage-length=0" />
+					<Add option="-fno-builtin" />
+					<Add option="-DDEBUG=1" />
+				</Compiler>
+				<Linker>
+					<Add option="-mthumb" />
+					<Add option="-nostartfiles" />
+					<Add option="-nostdlib" />
+					<Add option="-fno-exceptions" />
+					<Add option="--specs=nano.specs" />
+					<Add option="-lnosys" />
+					<Add option="-Xlinker -n" />
+					<Add option="-Wl,--start-group" />
+					<Add option="-lc -lg -lstdc++ -lsupc++" />
+					<Add option="-lgcc -lm" />
+					<Add option="-Wl,--end-group" />
+					<Add option="-Wl,-Map" />
+					<Add option="-Wl,${TARGET_OUTPUT_FILE}.map" />
+					<Add option="-Wl,--gc-sections" />
+					<Add option="-n" />
+					<Add option="-Wl,-cref" />
+					<Add option="-Wl,--no-warn-mismatch" />
+					<Add option="-L armv6-m" />
+					<Add option="-TDA14580_rom.ld" />
+				</Linker>
+				<PostOutput>
+					<ConvertedOutput PostOutputCreate="0" />
+					<ConvertedOutput PostOutputType="HEX" />
+					<ConvertedOutput PostOutputFile="${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}" />
+				</PostOutput>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../source" />
+			<Add directory="../../common" />
+			<Add directory="../source/config" />
+			<Add directory="../../cmsis/include" />
+			<Add directory="../../library" />
+			<Add directory="../../library/highlevel" />
+			<Add directory="../../library/lowlevel" />
+			<Add directory="../../library/middleware" />
+			<Add directory="../../thirdparty" />
+		</Compiler>
+		<PostOutput>
+			<ConvertedOutput PostOutputCreate="0" />
+			<ConvertedOutput PostOutputType="HEX" />
+			<ConvertedOutput PostOutputFile="${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}" />
+		</PostOutput>
+		<Unit filename="../../common/system_ARMCM0.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../source/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="startup_da14580.s" />
+		<Extensions>
+			<projectwizard TargetDevice="Cortex-M4" />
+			<code_completion />
+			<J-Link>
+				<GDBServer TargetName="DA14580_Debug">
+					<CmdOption UseGDBServer="1" />
+					<CmdOption TargetDevice="Cortex-M4" />
+					<CmdOption TargetInterface="1" />
+					<CmdOption InterfaceSpeed="4000" />
+					<CmdOption TargetEndian="0" />
+					<CmdOption OverrideExe="0" Filename="C:\Program Files (x86)\SEGGER\JLink_V613g\JLinkGDBServer.exe" />
+					<CmdOption StartServer="1" />
+					<CmdOption CloseServer="1" />
+					<CmdOption ServerIP="localhost" />
+					<CmdOption ServerPort="2331" />
+					<CmdOption UseAdvancedOptions="0" />
+					<CmdOption SelectJLink="" />
+					<CmdOption InitRegs="1" />
+					<CmdOption LocalhostOnly="1" />
+					<CmdOption Log="0" Filename="" />
+					<CmdOption Silent="0" />
+					<CmdOption StayOnTop="0" />
+					<CmdOption VerifyDownload="0" />
+					<CmdOption NoTargetTimeout="0" />
+					<CmdOption JTAGConf="0" IRPre="0" DRPre="0" />
+					<CmdOption JLinkScript="0" Filename="" />
+					<CmdOption JLinkSettings="0" Filename="" />
+					<CmdOption GDBInit="0" Filename="" />
+					<CmdOption AdditionalOptions="" />
+				</GDBServer>
+				<GDBServer TargetName="DA14580_Release">
+					<CmdOption UseGDBServer="1" />
+					<CmdOption TargetDevice="Cortex-M4" />
+					<CmdOption TargetInterface="1" />
+					<CmdOption InterfaceSpeed="4000" />
+					<CmdOption TargetEndian="0" />
+					<CmdOption OverrideExe="0" Filename="C:\Progrom Files (x86)\SEGGER\JLink_V613g\JLinkGDBServer.exe" />
+					<CmdOption StartServer="1" />
+					<CmdOption CloseServer="1" />
+					<CmdOption ServerIP="localhost" />
+					<CmdOption ServerPort="2331" />
+					<CmdOption UseAdvancedOptions="0" />
+					<CmdOption SelectJLink="" />
+					<CmdOption InitRegs="1" />
+					<CmdOption LocalhostOnly="1" />
+					<CmdOption Log="0" Filename="" />
+					<CmdOption Silent="0" />
+					<CmdOption StayOnTop="0" />
+					<CmdOption VerifyDownload="0" />
+					<CmdOption NoTargetTimeout="0" />
+					<CmdOption JTAGConf="0" IRPre="0" DRPre="0" />
+					<CmdOption JLinkScript="0" Filename="" />
+					<CmdOption JLinkSettings="0" Filename="" />
+					<CmdOption GDBInit="0" Filename="" />
+					<CmdOption AdditionalOptions="" />
+				</GDBServer>
+			</J-Link>
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="2331" remote_server="J-Link GDB Server" Break_at_Main="1" Break_at_Main_Symbol="main" additional_cmds="monitor reset&#x0A;load" />
+				</remote_debugging>
+				<remote_debugging target="DA14580_Debug">
+					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="2331" remote_server="J-Link GDB Server" Break_at_Main="1" Break_at_Main_Symbol="main" additional_cmds="monitor reset&#x0A;load" />
+				</remote_debugging>
+				<remote_debugging target="DA14580_Release">
+					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="2331" remote_server="J-Link GDB Server" Break_at_Main="1" Break_at_Main_Symbol="main" additional_cmds="monitor reset&#x0A;load" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</emIDE_project_file>

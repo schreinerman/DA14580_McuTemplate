@@ -1,0 +1,105 @@
+# depslib dependency file v1.0
+1489451823 source:c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\common\system_ARMCM0.c
+	<stdint.h>
+	"system_apollo2.h"
+	"apollo2.h"
+
+1489451823 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\common\system_apollo2.h
+	<stdint.h>
+
+1489451826 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\common\apollo2.h
+	"core_cm4.h"
+	"system_apollo2.h"
+
+1486404106 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\cmsis\include\core_cm4.h
+	<stdint.h>
+	"cmsis_compiler.h"
+
+1486404106 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\cmsis\include\cmsis_compiler.h
+	<stdint.h>
+	"cmsis_armcc.h"
+	"cmsis_armclang.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1486404106 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\cmsis\include\cmsis_armcc.h
+
+1486404106 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\cmsis\include\cmsis_armclang.h
+	<arm_compat.h>
+
+1486404106 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\cmsis\include\cmsis_gcc.h
+
+1490952387 source:c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\example\source\main.c
+	"mcu.h"
+	"base_types.h"
+
+1489749237 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\example\source\mcu.h
+	"RTE_Device.h"
+	"apollo2.h"
+	"system_apollo2.h"
+
+1501681094 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\example\source\config\rte_device.h
+
+1489749237 c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\common\base_types.h
+	<stddef.h>
+	"stdint.h"
+
+1489749237 source:c:\users\mschre\documents\_mcutemplates\template\da14580_template-v10\example\emide\startup_da14580.s
+
+1515396274 source:c:\users\mschre\documents\mcutemplates\da14580_template\example\source\main.c
+	"mcu.h"
+	"base_types.h"
+
+1515399236 c:\users\mschre\documents\mcutemplates\da14580_template\example\source\mcu.h
+	"RTE_Device.h"
+	"global_io.h"
+	"ARMCM0.h"
+
+1515397075 c:\users\mschre\documents\mcutemplates\da14580_template\example\source\config\rte_device.h
+
+1469631171 c:\users\mschre\documents\mcutemplates\da14580_template\common\global_io.h
+	"datasheet.h"
+
+1469631171 c:\users\mschre\documents\mcutemplates\da14580_template\common\datasheet.h
+	"global_io.h"
+
+1469631171 c:\users\mschre\documents\mcutemplates\da14580_template\common\armcm0.h
+	"global_io.h"
+	<core_cm0.h>
+	"system_ARMCM0.h"
+
+1486404106 c:\users\mschre\documents\mcutemplates\da14580_template\cmsis\include\core_cm0.h
+	<stdint.h>
+	"cmsis_compiler.h"
+
+1486404106 c:\users\mschre\documents\mcutemplates\da14580_template\cmsis\include\cmsis_compiler.h
+	<stdint.h>
+	"cmsis_armcc.h"
+	"cmsis_armclang.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1486404106 c:\users\mschre\documents\mcutemplates\da14580_template\cmsis\include\cmsis_armcc.h
+
+1486404106 c:\users\mschre\documents\mcutemplates\da14580_template\cmsis\include\cmsis_armclang.h
+	<arm_compat.h>
+
+1486404106 c:\users\mschre\documents\mcutemplates\da14580_template\cmsis\include\cmsis_gcc.h
+
+1515397479 c:\users\mschre\documents\mcutemplates\da14580_template\common\system_armcm0.h
+	"base_types.h"
+
+1515396270 c:\users\mschre\documents\mcutemplates\da14580_template\common\base_types.h
+	<stddef.h>
+	"stdint.h"
+
+1515402421 source:c:\users\mschre\documents\mcutemplates\da14580_template\common\system_armcm0.c
+	"ARMCM0.h"
+	<string.h>
+
+1515406344 source:c:\users\mschre\documents\mcutemplates\da14580_template\example\emide\startup_da14580.s
+

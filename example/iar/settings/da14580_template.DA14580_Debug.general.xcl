@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armJET.dll" 
+
+"C:\Users\mschre\Documents\McuTemplates\da14580_template\Readme.txt" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armbat.dll" 
+
+--macro "C:\Users\mschre\Documents\McuTemplates\da14580_template\example\iar\config\Ram_VTOR_DA14580.mac" 
+
+
+
+
